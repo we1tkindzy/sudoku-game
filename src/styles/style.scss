@@ -1,0 +1,13 @@
+@import './fonts.scss';
+
+$body-color: red;
+
+body {
+  color: $body-color;
+
+  h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 62px;
+    font-weight: 400;
+  }
+}
