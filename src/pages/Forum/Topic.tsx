@@ -1,7 +1,11 @@
-import React from 'react';
+import Layout from 'components/Layout/Layout';
 
 const ForumTopicPage = () => {
-  return <h1>ForumTopic page</h1>;
+  return (
+    <Layout>
+      <h1>Forum Topic Page</h1>
+    </Layout>
+  );
 };
 
 export default ForumTopicPage;

@@ -1,67 +1,26 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { AppRoute } from 'utils/constants';
 import './style.scss';
-
-const navigationLinks = [
-  {
-    path: `${AppRoute.MAIN}`,
-    name: 'MainPage',
-  },
-  {
-    path: `${AppRoute.LOGIN}`,
-    name: 'LoginPage',
-  },
-  {
-    path: `${AppRoute.REGISTRATION}`,
-    name: 'RegestrationPage',
-  },
-  {
-    path: `${AppRoute.PROFILE}`,
-    name: 'ProfilePage',
-  },
-  {
-    path: `${AppRoute.PASSWORD}`,
-    name: 'PasswordPage',
-  },
-  {
-    path: `${AppRoute.PROFILE_SETTINGS}`,
-    name: 'ProfileSettingsPage',
-  },
-  {
-    path: `${AppRoute.GAME}`,
-    name: 'GamePage',
-  },
-  {
-    path: `${AppRoute.FORUM}`,
-    name: 'ForumPage',
-  },
-  {
-    path: `${AppRoute.FORUM}/:10`,
-    name: 'ForumTopicPage',
-  },
-  {
-    path: `${AppRoute.LEADERBOARD}`,
-    name: 'LeaderboardPage',
-  },
-  {
-    path: `/123weqd`,
-    name: 'ErrorPage',
-  },
-];
+import Layout from 'components/Layout/Layout';
+import { useNavigate } from 'react-router-dom';
+import { AppRoute } from 'utils/constants';
 
 const MainPage = () => {
+  const navigate = useNavigate();
+
+  const navigateToGame = () => {
+    navigate(AppRoute.GAME);
+  };
+
   return (
-    <>
-      <h1>Main page</h1>
-      <nav className="navigation">
-        {navigationLinks.map((el, id) => (
-          <NavLink key={id + 1} to={el.path}>
-            {el.name}
-          </NavLink>
-        ))}
-      </nav>
-    </>
+    <Layout>
+      <div className="main-page">
+        <div className="main-page__wrapper">
+          <h1>Sudoku Game</h1>
+          <button onClick={navigateToGame} className="button">
+            Play
+          </button>
+        </div>
+      </div>
+    </Layout>
   );
 };
 

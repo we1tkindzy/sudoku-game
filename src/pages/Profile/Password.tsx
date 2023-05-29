@@ -1,7 +1,11 @@
-import React from 'react';
+import Layout from 'components/Layout/Layout';
 
 const PasswordPage = () => {
-  return <h1>Password page</h1>;
+  return (
+    <Layout>
+      <h1>Password Page</h1>
+    </Layout>
+  );
 };
 
 export default PasswordPage;

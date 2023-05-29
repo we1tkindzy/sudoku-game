@@ -1,5 +1,20 @@
-.navigation {
+@import 'styles/variables.scss';
+@import 'styles/button.scss';
+
+.main-page {
   display: flex;
-  flex-direction: column;
-  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    h1 {
+      font-size: 100px;
+      margin-bottom: 50px;
+      color: $gentian-blue;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

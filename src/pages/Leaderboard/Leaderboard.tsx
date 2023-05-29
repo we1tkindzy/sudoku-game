@@ -1,7 +1,11 @@
-import React from 'react';
+import Layout from 'components/Layout/Layout';
 
 const LeaderboardPage = () => {
-  return <h1>Leaderboard page</h1>;
+  return (
+    <Layout>
+      <h1>Leaderboard Page</h1>
+    </Layout>
+  );
 };
 
 export default LeaderboardPage;

@@ -1,7 +1,11 @@
-import React from 'react';
+import Layout from 'components/Layout/Layout';
 
 const ProfileSettingsPage = () => {
-  return <h1>Profile settings page</h1>;
+  return (
+    <Layout>
+      <h1>Profile Settings Page</h1>
+    </Layout>
+  );
 };
 
 export default ProfileSettingsPage;

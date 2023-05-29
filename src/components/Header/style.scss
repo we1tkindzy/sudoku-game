@@ -1,0 +1,12 @@
+@import 'styles/variables.scss';
+
+.header {
+  background-color: $sand;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+}

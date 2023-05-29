@@ -1,7 +1,11 @@
-import React from 'react';
+import Layout from 'components/Layout/Layout';
 
 const GamePage = () => {
-  return <h1>Game page</h1>;
+  return (
+    <Layout>
+      <h1>Game Page</h1>
+    </Layout>
+  );
 };
 
 export default GamePage;
