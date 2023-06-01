@@ -1,19 +1,33 @@
 .button {
   padding: 15px 20px;
-  color: $gentian-blue;
-  background-color: $sand;
+
   border-radius: 15px;
   font-size: 20px;
   width: 200px;
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.4),
-    1px 1px 5px rgba($white, 0.6);
 
-  &:hover {
-    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.8), 1px 1px 5px $white;
+  &--light {
+    color: $gentian-blue;
+    background-color: $sand;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.4),
+      1px 1px 5px rgba($white, 0.6);
+
+    &:hover {
+      box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.8), 1px 1px 5px $white;
+    }
+
+    &:active {
+      box-shadow: inset 2px 2px 5px rgba($black, 0.5),
+        1px 1px 5px rgba(154, 147, 140, 0.5);
+    }
   }
 
-  &:active {
-    box-shadow: inset 2px 2px 5px rgba($black, 0.5),
-      1px 1px 5px rgba(154, 147, 140, 0.5);
+  &--dark {
+    color: $white;
+    background-color: $gentian-blue;
+  }
+
+  &--transparent {
+    width: auto;
+    padding: 10px;
   }
 }

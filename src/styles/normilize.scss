@@ -24,8 +24,12 @@ a {
   cursor: pointer;
 }
 
-button {
+button,
+input {
   background-color: inherit;
   border: none;
+}
+
+button {
   cursor: pointer;
 }

@@ -12,13 +12,11 @@ const MainPage = () => {
 
   return (
     <Layout>
-      <div className="main-page">
-        <div className="main-page__wrapper">
-          <h1>Sudoku Game</h1>
-          <button onClick={navigateToGame} className="button">
-            Play
-          </button>
-        </div>
+      <div className="main-page wrapper">
+        <h1 className="main-page__title">Sudoku Game</h1>
+        <button onClick={navigateToGame} className="button button--light">
+          Play
+        </button>
       </div>
     </Layout>
   );
