@@ -1,2 +1,7 @@
-// @import 'styles/variables.scss';
-// @import 'styles/button.scss';
+@import 'styles/variables.scss';
+
+.login {
+  &__button {
+    margin-top: 10px;
+  }
+}

@@ -7,7 +7,6 @@ export enum AppRoute {
   PROFILE_SETTINGS = `/profile-settings`,
   LEADERBOARD = `/leaderboard`,
   GAME = `/game`,
-  FORUM = `/forum`,
-  FORUM_TOPIC = `/forum/:topicId`,
+  SUPPORT = `/support`,
   map = 'map',
 }

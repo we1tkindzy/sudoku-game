@@ -24,10 +24,26 @@
   &--dark {
     color: $white;
     background-color: $gentian-blue;
+
+    &:hover {
+      color: $light-blue-crayola;
+      filter: brightness(1.5);
+    }
   }
 
   &--transparent {
     width: auto;
     padding: 10px;
+  }
+
+  &--link {
+    color: $pigeon-blue;
+    padding: 0;
+    width: 100%;
+    text-decoration: underline;
+
+    &:hover {
+      color: $white;
+    }
   }
 }

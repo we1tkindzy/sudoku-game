@@ -44,7 +44,7 @@ const ProfilePage = () => {
 
   return (
     <Layout>
-      <div className="wrapper profile">
+      <div className="wrapper wrapper--bg profile">
         <Form title="Profile" inputs={inputs} />
 
         <div className="profile__buttons-wrapper">

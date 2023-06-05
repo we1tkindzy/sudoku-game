@@ -1,0 +1,73 @@
+@import 'styles/variables.scss';
+
+.leaderboard {
+  &__title {
+    color: $gentian-blue;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gentian-blue;
+    border-radius: 20px;
+  }
+
+  &__head {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+
+    p {
+      text-align: center;
+      background-color: $light-blue-crayola;
+      border-right: 1px solid $gentian-blue;
+      border-bottom: 1px solid $gentian-blue;
+      padding: 10px;
+      font-size: 30px;
+      color: $gentian-blue;
+
+      &:first-child {
+        border-top-left-radius: 20px;
+      }
+
+      &:last-child {
+        border-right: none;
+        border-top-right-radius: 20px;
+      }
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+
+    p {
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
+      background-color: $pale-blue;
+      border-right: 1px solid $gentian-blue;
+      border-bottom: 1px solid $gentian-blue;
+      color: $gentian-blue;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &:last-child {
+      p {
+        border-bottom: none;
+
+        &:first-child {
+          border-bottom-left-radius: 20px;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: 20px;
+        }
+      }
+    }
+  }
+}

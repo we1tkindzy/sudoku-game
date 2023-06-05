@@ -36,7 +36,7 @@ const ProfileSettingsPage = () => {
 
   return (
     <Layout>
-      <div className="wrapper profile">
+      <div className="wrapper wrapper--bg profile">
         <button
           onClick={navigeteToProfile}
           className="button button--transparent profile__button-back">

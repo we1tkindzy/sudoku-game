@@ -1,0 +1,14 @@
+@import 'styles/variables.scss';
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+
+  &__textarea {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

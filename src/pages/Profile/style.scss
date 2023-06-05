@@ -1,10 +1,6 @@
 @import 'styles/variables.scss';
-@import 'styles/button.scss';
 
 .profile {
-  background-color: $sand;
-  padding: 40px;
-  border-radius: 25px;
   position: relative;
 
   .form {
@@ -14,6 +10,7 @@
 
   &__buttons-wrapper {
     display: flex;
+    justify-content: space-between;
     gap: 20px;
   }
 

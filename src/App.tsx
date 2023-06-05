@@ -9,8 +9,7 @@ import ProfilePage from 'pages/Profile/Profile';
 import PasswordPage from 'pages/Profile/Password';
 import ProfileSettingsPage from 'pages/Profile/ProfileSettings';
 import GamePage from 'pages/Game/Game';
-import ForumPage from 'pages/Forum/Forum';
-import ForumTopicPage from 'pages/Forum/Topic';
+import SupportPage from 'pages/Support/Support';
 import LeaderboardPage from 'pages/Leaderboard/Leaderboard';
 
 export const routs = [
@@ -44,12 +43,8 @@ export const routs = [
     element: <GamePage />,
   },
   {
-    path: `${AppRoute.FORUM}`,
-    element: <ForumPage />,
-  },
-  {
-    path: `${AppRoute.FORUM_TOPIC}`,
-    element: <ForumTopicPage />,
+    path: `${AppRoute.SUPPORT}`,
+    element: <SupportPage />,
   },
   {
     path: `${AppRoute.LEADERBOARD}`,

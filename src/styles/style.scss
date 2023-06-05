@@ -1,29 +1,4 @@
 @import './variables.scss';
 @import './fonts.scss';
 @import './normilize.scss';
-
-body {
-  background-color: $light-blue-crayola;
-  font-family: 'Comfortaa', sans-serif;
-
-  h1 {
-    font-size: 62px;
-    font-weight: 400;
-  }
-}
-
-#root,
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+@import './globals.scss';

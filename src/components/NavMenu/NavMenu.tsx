@@ -24,8 +24,8 @@ const navigationLinks = [
     name: 'Game',
   },
   {
-    path: `${AppRoute.FORUM}`,
-    name: 'Forum',
+    path: `${AppRoute.SUPPORT}`,
+    name: 'Support',
   },
   {
     path: `${AppRoute.LEADERBOARD}`,
